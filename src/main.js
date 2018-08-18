@@ -5,13 +5,13 @@ import App from './App'
 import router from './router'
 import Element from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css';
+import VueResource from 'vue-resource';
 
-Vue.use(Element, {
-    size: 'medium', // set element-ui default size
-    i18n: (key, value) => i18n.t(key, value)
-})
+Vue.use(Element);
+Vue.use(VueResource);
 
 Vue.config.productionTip = false
+Vue.http.options.root = '/api/';
 
 /* eslint-disable no-new */
 new Vue({

@@ -9,7 +9,7 @@ export default new Router({
     {
       path: '/',
       name: 'Layout',
-      component: Layout,
+      component: HelloWorld,
       menuShow: false
     },
     {
